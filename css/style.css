@@ -1,0 +1,111 @@
+/* mizuno original です */
+body {
+  font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.area-header {
+  background-color: #b4e3ed;
+  padding: 8px;
+  margin: 10px;
+  color: #616161;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.area-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 160px;
+  margin: 10px;
+  text-align: center;
+}
+
+.head-box {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 120px;
+}
+
+.head-box .area {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e88994;
+  margin: 25px 0;
+}
+
+.head-box .party {
+  color: #616161;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.text-area {
+  font-size: 12px;
+}
+
+.text-area h3 {
+  color: #0a0a0a;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.text-area .description {
+  color: #0a0a0a;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.text-area .show {
+  color: #0684a0;
+  font-size: 14px;
+}
+
+@media screen and ( max-width:699px ) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 480px;
+  }
+  .area-header {
+    text-align: center;
+  }
+  .area-column {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .head-box .party {
+    font-size: 18px;
+  }
+  .text-area {
+    font-size: 16px;
+  }
+  .text-area .show {
+    font-size: 18px;
+  }
+}
